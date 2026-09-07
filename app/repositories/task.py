@@ -3,7 +3,9 @@
 
 from sqlalchemy import select
 from sqlalchemy.orm import Session
+
 from app.models.task import TaskORM
+
 
 class TaskRepository:
     def __init__(self, db: Session) -> None:
